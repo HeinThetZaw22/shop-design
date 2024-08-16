@@ -112,7 +112,10 @@ const CategoryBox = () => {
               gap-3">
                 <div className="
                 flex 
-                flex-col 
+                flex-col
+                sm:flex-row
+                lg:flex-col
+                items-center
                 bg-neutral-900
                 hover:bg-neutral-900/95
                 transition
@@ -121,18 +124,23 @@ const CategoryBox = () => {
                 rounded-md
                 p-5">
                   <Image
-                    className="-translate-y-6"
+                    className=""
                     width={100}
                     height={90}
                     alt="vape"
                     src={"/images/ZYONgreen.webp"}
                   />
-                  <h3 className=" text-lg">Pods</h3>
-                  <p className=" text-sm text-gray-400">Variety of choices available</p>
+                  <div>
+                    <h3 className=" text-lg">Pods</h3>
+                    <p className=" text-sm text-gray-400">Variety of choices available</p>
+                  </div>
                 </div>
-                <div className="
+                <div className="fill
                 flex 
                 flex-col 
+                sm:flex-row
+                lg:flex-col
+                items-center
                 bg-neutral-900
                 hover:bg-neutral-900/95
                 transition
@@ -140,15 +148,19 @@ const CategoryBox = () => {
                 cursor-pointer
                 rounded-md
                 p-5">
+                 
                   <Image
-                    className="-translate-y-6"
+                    className=""
                     width={100}
-                    height={90}
+                    height={100}
                     alt="vape"
                     src={"/images/KleinBlue.png"}
-                  />
-                  <h3 className=" text-lg">Disposable</h3>
-                  <p className=" text-sm text-gray-400">Easy, clean & superb</p>
+                    />
+                   
+                  <div className="">
+                    <h3 className=" text-lg">Disposable</h3>
+                    <p className=" text-sm text-gray-400">Easy, clean & superb</p>
+                  </div>
                 </div>
               </div>
             </div>

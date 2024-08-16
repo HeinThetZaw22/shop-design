@@ -11,7 +11,7 @@ import {
   FaTwitterSquare,
   FaViber,
 } from "react-icons/fa";
-import LanguageCheckboxes from "../LanguageCheckbox";
+import LanguageCheckboxes from "./LanguageCheckbox";
 import Image from "next/image";
 
 const FooterContent = () => {
